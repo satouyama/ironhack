@@ -1,0 +1,4 @@
+log/error.log
+bin/**/*
+config/secret_keys
+db/db_backup
