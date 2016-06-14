@@ -1,0 +1,2 @@
+class Lightspeedcar < Car
+end
