@@ -7,3 +7,8 @@ car2 = Car.new("watch out!",10)
 car2.make_noise
 
 Car.check_speed()
+
+car1.travel("Venice")
+car1.travel("Egypt")
+
+puts car1.cities
