@@ -1,0 +1,3 @@
+class Westeros < Space
+
+end
