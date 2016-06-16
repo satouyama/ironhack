@@ -3,11 +3,13 @@ class Space
 		@player = player
 		@player_location = player.position
 
-		check_currgent_exit
+		check_current_exit
 		intended_direction = ask_direction
 		move_result = @player.move(intended_direction)
+		#puts "move_result current value #{move_result}"
 		
 		if move_result == "special"
+		#	puts "# move_result value is #{move_result}" 
 			check_special(intended_direction)
 		end
 
@@ -24,13 +26,15 @@ class Space
 		if input == condition.upcase
 			#puts "activation"
 			activation
+			@player.exit_condition = "dead"
 		else
 			#puts "deactivation"
+	#		puts "none_found will be activated based on input #{input}"
 			none_found
 		end	
 	end
 
-	def check_currgent_exit 
+	def check_current_exit 
 		if @player_location[0] == 0 && @player_location[1] == 0
 			exits = "S E"
 		elsif @player_location[0] ==3 && @player_location[1] == 0

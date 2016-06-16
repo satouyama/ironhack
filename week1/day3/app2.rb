@@ -33,12 +33,16 @@ if input_start == "n"
 	puts "you don't really have a choice"
 else
 	puts "good luck!"
+end
+	puts "----------------------"
+	puts "----------------------"
 	puts "bonus moves: "
 	puts "1. look for bathroom"
 	puts "2. burn this place"
 	puts "3. start a fight"
 	puts "4. cry in fetal position"
-end
+	puts "----------------------"
+	puts "----------------------"
 
 player1 = Player.new
 
@@ -76,10 +80,17 @@ while i <5
 		break
 	end
 	if player1.exit_condition == "dead"
-		puts "you are KILLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
+		puts "you are KIIILLLLED"
 		break
 	end
-	i +=1
+	
 	puts "---------------------------------------------------"
 end
 

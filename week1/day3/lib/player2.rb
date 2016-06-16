@@ -36,6 +36,7 @@ class Player
   				@exit_condition= "dead"
         end
       else
+      #   puts "input not matched N S W E"
          @exit_condition ="special"
   		end
 	end
