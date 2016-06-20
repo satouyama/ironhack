@@ -7,7 +7,7 @@ the_calculator = StringCalculator.new
 p the_calculator.add("") == 0
 
 p the_calculator.add("6") == 6
-p the_calculator.add("9") == 9
+p the_calculator.add("9Y$%^,8") == 9
 
 p the_calculator.add("5,7") == 12
 p the_calculator.add("4,3") == 7
