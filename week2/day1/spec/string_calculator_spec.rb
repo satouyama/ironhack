@@ -4,50 +4,53 @@ require_relative("../lib/string_calculator.rb")
 
 
 RSpec.describe StringCalculator do
-  
+  let :the_calculator do
+    the_calculator = StringCalculator.new
+  end
+
   context "give empty" do
     it "returns 0 " do
       #test code
-      expect(StringCalculator.new.add("")).to eq 0
+      expect(the_calculator.add("")).to eq 0
     end
   end
-  
+
   context "given single number" do
     it "returns the number 6 when given 6" do
-      expect(StringCalculator.new.add("6")).to eq 6
+      expect(the_calculator.add("6")).to eq 6
     end
     it "returns the number 9 when given 9" do
-      expect(StringCalculator.new.add("9")).to eq 9
+      expect(the_calculator.add("9")).to eq 9
     end
   end
 
   context "given 2 digits" do 
     it "returns 12 when given 7,5" do
-      expect(StringCalculator.new.add("7,5")).to eq 12
+      expect(the_calculator.add("7,5")).to eq 12
     end
     it "returns 7 when given 4,3" do
-      expect(StringCalculator.new.add("4,3")).to eq 7
+      expect(the_calculator.add("4,3")).to eq 7
     end
     it "returns 7 when given 4&3" do
-      expect(StringCalculator.new.add("4&3")).to eq 7
+      expect(the_calculator.add("4&3")).to eq 7
     end
   end
 
   context "given 3 digits" do
     it "returns 22 when given 7,5,10" do
-      expect(StringCalculator.new.add("7,5,10")).to eq 22
+      expect(the_calculator.add("7,5,10")).to eq 22
     end
     it "returns 27 when given 4,3,20" do
-      expect(StringCalculator.new.add("4,3,20")).to eq 27
+      expect(the_calculator.add("4,3,20")).to eq 27
     end
   end
 
   context "given different separating characters" do
     it "returns 22 when given 7%5,10" do
-      expect(StringCalculator.new.add("7%5,10")).to eq 22
+      expect(the_calculator.add("7%5,10")).to eq 22
     end
     it "returns 27 when given 4#3(20" do
-      expect(StringCalculator.new.add("4#3(20")).to eq 27
+      expect(the_calculator.add("4#3(20")).to eq 27
     end
   end
 end
