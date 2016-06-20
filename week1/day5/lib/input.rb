@@ -23,15 +23,15 @@ module Input
 	end
 
 
-	def check_board_valid(input_cor, des = 0) # whether input is within the range
+	def check_board_valid(input_cor, des = 2) # whether input is within the range
 		array1 = input_cor.split("") 
-
+		result = @turn * des
 		if des == 0
-			if (@grid[8-(array1[1].to_i)][(array1[0].to_i)-1].name =~ /[W]/ ) && @turn == 0
-				puts "first con"
+			if (@grid[8-(array1[1].to_i)][(array1[0].to_i)-1].name =~ /[W]/ ) && result == 0
+				#puts "first con"
 				true
-			elsif (@grid[8-(array1[1].to_i)][(array1[0].to_i)-1].name =~ /[B]/) && @turn ==1
-				puts "second con"
+			elsif (@grid[8-(array1[1].to_i)][(array1[0].to_i)-1].name =~ /[B]/) && result != 0
+				#puts "second con"
 				true
 			else
 				puts "It's not your turn yet piece of shit"
@@ -42,7 +42,7 @@ module Input
 
 		#puts @grid[8-(array1[1].to_i)][(array1[0].to_i)-1]
 		 if (1..8).include?(array1[0].to_i) && (1..8).include?(array1[1].to_i) && array1.length ==2
-		 	if @grid[8-(array1[1].to_i)][(array1[0].to_i)-1] == "00" && des ==0
+		 	if !@grid[8-(array1[1].to_i)][(array1[0].to_i)-1] && des ==0
 		 		puts "This slot has an empty piece.pls try again"
 		 		return false
 		 	end

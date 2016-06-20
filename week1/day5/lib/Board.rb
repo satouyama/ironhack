@@ -45,10 +45,10 @@ class Board
 		@grid = [
 			[bR,bK,bB,bQ,bKing,bB2,bK2,bR2],
 			[bP1,bP2,bP3,bP4,bP5,bP6,bP7,bP8],
-			["00","00","00","00","00","00","00","00"],
-			["00","00","00","00","00","00","00","00"],
-			["00","00","00","00","00","00","00","00"],
-			["00","00","00","00","00","00","00","00"],
+			[nil] * 8,
+			[nil] * 8,
+			[nil] * 8,
+			[nil] * 8,
 			[wP1,wP2,wP3,wP4,wP5,wP6,wP7,wP8],
 			[wR,wK,wB,wQ,wKing,wB2,wK2,wR2],	
 		]
@@ -56,12 +56,9 @@ class Board
 
 	end
 
+
 	def check_empty(final_x,final_y)
-		if @grid[final_x][final_y] == "00"
-			"empty"
-		else
-			@grid[final_x][final_y]
-		end
+		@grid[final_x][final_y] ? @grid[final_x][final_y] : "empty"
 	end
 
 
@@ -69,11 +66,8 @@ class Board
 		puts "Current Board Status:"
 		@grid.each do |row|
 			row.each do |element|
-				if element == "00"
-					print "|#{element}|"
-				else
-					print "|#{element.name}|"
-				end
+				print "|#{ element ? element.name : "00"}|"
+
 			end
 			print "\n"
 		end
@@ -97,7 +91,7 @@ class Board
 		@grid[index_des_x][index_des_y] = piece.clone
 		@grid[index_des_x][index_des_y].start_x = index_start_y + 1
 		@grid[index_des_x][index_des_y].start_y = 8 - index_start_x
-		@grid[index_start_x][index_start_y] = "00"
+		@grid[index_start_x][index_start_y] = nil
 		if @turn ==1
 			@turn = 0
 		elsif @turn == 0
