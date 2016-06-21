@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ascii</title>
+	<link rel= "stylesheet" href="/ascii_style.css" >
+</head>
+<body>
+	
+	<% asciifier = Artii::Base.new(:font => @font) %>
+
+	<pre> <%= asciifier.asciify(@random_word) %> </pre>
+
+
+
+</body>
+</html>

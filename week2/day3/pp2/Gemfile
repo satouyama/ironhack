@@ -1,0 +1,6 @@
+# tells bundle what gem is needed
+
+source "https://rubygems.org"
+
+gem "artii"
+gem "sinatra"
