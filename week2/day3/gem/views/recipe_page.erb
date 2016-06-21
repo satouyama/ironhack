@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reciple</title>
+	<script type="text/javascript">
+		function startTime() {
+	    var today = new Date();
+	    var h = today.getHours();
+	    var m = today.getMinutes();
+	    var s = today.getSeconds();
+	    m = checkTime(m);
+	    s = checkTime(s);
+	    document.getElementById('txt').innerHTML =
+	    h + ":" + m + ":" + s;
+	    var t = setTimeout(startTime, 1000);
+	}
+	function checkTime(i) {
+	    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	    return i;
+}
+
+
+	</script>
+</head>
+<body onload = "startTime()">
+
+	<img src="cat.gif" >
+<!-- 	<% i = 1 %>
+	<% while i <10  %>
+	<% time = Time.new %>
+	<% hour = time.hour%>
+	<% minute = time.min%>
+	<% seconds = time.sec%>
+	<% display_time = %>
+	<p id="clock"> <%= "#{hour} : #{minute} : #{seconds}"%> </p>>
+	<% i+=1%>
+	<% sleep(1) %>
+	<% end %> -->
+	<div id ="txt"> </div>>
+
+	<h1> My recipe for <%=@name%> </h1>
+
+	<% @ingredients.each do |variable| %>
+		<p> <%=variable %> </p>
+	<% end %>
+
+	
+
+</body>
+</html>
