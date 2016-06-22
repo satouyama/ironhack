@@ -1,3 +1,4 @@
+
 class Calculator
   def initialize(first,second)
     @first = first

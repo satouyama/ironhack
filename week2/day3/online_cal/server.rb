@@ -1,18 +1,39 @@
 # server.rb
 require "sinatra"
+require "sinatra/reloader"
+require "pry"
 require_relative("lib/Calculator.rb")
+
+
+enable(:sessions)
 
 get "/" do
   "Welcome to the Online Calculator"
   erb(:home)
 end
 
+get "/session_test" do
+  @current_session = session
+
+  erb(:display_the_session)
+
+end
+
+get "/session_add/:value" do
+  session[:new_session_value] = params["value"]
+
+  
+  redirect to ("/session_test")
+end
 
 
 post "/calculate" do
   operation = params[:operation]
   first = params[:first_number].to_f
   second = params[:second_number].to_f
+
+  # binding.pry
+
   calculation1 = Calculator.new(first,second)
 
   case operation

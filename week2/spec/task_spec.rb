@@ -1,22 +1,55 @@
 require_relative("../lib/task.rb")
 
 class Counter
-  class << self
-    def increment
-      @count ||= 0
-      @count += 1
-    end
-    
-    def count
-      @count ||= 0
-    end
+  def initialize starting = 0
+    @counter =starting
   end
+
+  def count 
+    @counter += 10
+  end
+
+  # class << self
+  #   def increment
+  #     @count ||= 0
+  #     @count += 1
+  #   end
+    
+  #   def count
+  #     @count ||= 0
+  #   end
+  # end
 end
 
 RSpec.describe Task do 
   # let :new_task do
   #   Task.new
   # end
+  shared_examples_for ("testing") do
+    it "testing" do
+
+      expect(subject.count).to eq 10
+    end
+  end
+
+  describe Counter do
+    it_behaves_like "testing"
+  end
+
+
+
+  describe "let memoized" do
+    context "when already initiated by let" do
+      let(:ti_counter) {Counter.new}
+      it "trait transfers" do
+      
+        expect(ti_counter.count).to eq(10)
+      end
+      it "transfers to the next one without creating" do
+        expect(ti_counter.count).to eq(20)
+      end
+    end
+  end
 
   # using complete? methods
   describe "complete status manipulations" do
@@ -113,11 +146,12 @@ describe Counter, "#increment" do
     expect("happy dog").to start_with("happy") & end_with("dog")
   end
 
-  it "composing expectations" do
+  xit "composing expectations" do
     array = ["apple","banana","ham"]
     expect(array).to 
-
   end
+
+
 end
 
   

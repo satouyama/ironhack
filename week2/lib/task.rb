@@ -1,6 +1,6 @@
 class Task
     attr_reader :content, :id, :created_at, :updated_at
-    attr_writer :created_at
+    attr_writer :created_at, :content
     @@current_id = 1
     def initialize(content,complete_status = false)
         @content = content
