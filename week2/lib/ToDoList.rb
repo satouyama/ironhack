@@ -1,15 +1,18 @@
 require "yaml/store"
 
 class ToDoList
-    attr_reader :tasks, :user
+
+    attr_accessor :tasks, :user
+    include Search
+
     def initialize user = "Thinkpad"
         @user = user
         @tasks = []
         @todo_store = YAML::Store.new("./public/tasks.yml")
     end
     def add_task! input
-
-      @tasks << input
+      puts "add_task method invoked"
+      new_array = @tasks.insert(0,input)
       #p @tasks
     end
 
@@ -18,6 +21,14 @@ class ToDoList
       #p @tasks
       #p id
       @tasks.delete_at(id - 1)
+    end
+
+    def delete_by_id id
+      @tasks.delete_if do |element|
+        puts "ID IS #{id} ---------------------------------------- and element id is #{element.id}"
+        element.id == id.to_i
+      end
+      p @tasks
     end
 
     def find_task_by_id input
@@ -43,5 +54,10 @@ class ToDoList
       @todo_store.transaction do 
           @todo_store[@user] = @tasks
       end
+    end
+
+    def load_tasks
+      YAML::load_file("./public/tasks.yml")
+
     end
 end

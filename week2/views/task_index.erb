@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task List</title>
+</head>
+<body>
+	<h2> To do List</h2>
+	<ul>
+		<% @tasks.each do |x,y|%>
+			<% y.each do |z|%>
+
+				<% if z.completed? %>
+				
+				<li><strike> <%= z.content %> <a href="/complete/<%= z.id %>" > complete </a> </strike>  
+				<a href="/delete/<%= z.id %>">delete</a>
+				</li>
+
+				<% else %>
+					<li><%= z.content %> <a href="/complete/<%= z.id %>" > complete </a> </li>
+				<% end %>
+				
+			<% end %>
+		<% end %>
+	</ul>
+
+	<h3> <a href="/new_task">Add new tasks</a></h3>
+</body>
+</html>
