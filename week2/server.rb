@@ -24,8 +24,8 @@ todo_list = ToDoList.new("Josh")
 # todo_list.save
 
 get "/tasks" do
-  @tasks = todo_list.load_tasks
-  todo_list.tasks = @tasks["Josh"]
+  @tasks = todo_list.load_tasks    
+  todo_list.tasks = @tasks["Josh"]   # can be saved in Models
   erb(:task_index)
 end
 
@@ -41,12 +41,12 @@ post "/create_task" do
   # puts "haha + #{new_task.content}"
   # puts new_task.class
   saved_data = todo_list.load_tasks
-  old_array = saved_data["Josh"]
-  Task.current_id = old_array[0].id + 1
+  old_array = saved_data["Josh"]     # saved in Models 
+  Task.current_id = old_array[0].id + 1  # necessary evil  because we already have data saved. 
   new_task = Task.new(new_content)
   # puts " -----------------old array------------------"
   # p old_array
-  todo_list.tasks.insert(0,new_task)
+  todo_list.tasks.insert(0,new_task)   # add_task would do 
 
   # todo_list.tasks = todo_list
   if todo_list.tasks == [new_task]

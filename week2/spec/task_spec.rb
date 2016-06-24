@@ -25,16 +25,16 @@ RSpec.describe Task do
   # let :new_task do
   #   Task.new
   # end
-  shared_examples_for ("testing") do
-    it "testing" do
+  # shared_examples_for ("testing") do
+  #   it "testing" do
 
-      expect(subject.count).to eq 10
-    end
-  end
+  #     expect(subject.count).to eq 10
+  #   end
+  # end
 
-  describe Counter do
-    it_behaves_like "testing"
-  end
+  # describe Counter do
+  #   it_behaves_like "testing"
+  # end
 
 
 

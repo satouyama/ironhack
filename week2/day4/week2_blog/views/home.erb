@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="/page_forms_style.css">
+
+</head>
+<body>
+	<div><img src="/cat2.jpg" width="1200" height="200"></div>
+	<% @posts.each do |element| %>
+		<h3> Title: <a href ="/home/details/<%= @posts.index(element)%>"> <%= element.title %> </a></h3>
+		<h2> Date : <%= element.date %> </h2>
+	<% end %>
+	<div> 
+		<% (1..@page).each do |x| %>
+			<a href="/home/<%=x%>"><%= x%></a>
+		<% end %>
+
+	</div>
+	<div> Sort by  <a href="/latest_posts">Latest</a> <a href="/oldest_posts">Oldest</a> </div>
+	
+	<div> <a href="/new_post"> Create new posts</a> </div>
+</body>
+</html>

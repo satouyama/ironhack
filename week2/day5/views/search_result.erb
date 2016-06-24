@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Result</title>
+	<link rel="stylesheet" type="text/css" href="/home_style.css">
+	<script type = "text/javascript" src = "/home.js"> </script>
+</head>
+<body onload = "ask_question()">
+	<div class = "image">
+	<% @array_of_movies.each do |movie|%>
+		<img src = "<%= movie.poster%>">
+		<button type ='submit'> This one! </button>
+	<% end %>
+	</div>
+</body>
+</html>

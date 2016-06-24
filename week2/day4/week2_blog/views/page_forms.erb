@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create new pages</title>
+	<link rel="stylesheet" href="../public/page_forms_style.css">
+</head>
+<body>
+	<form action = "/create_page" method = "POST">
+		<div> <input type="text" name="title" placeholder="post title" style="width:500px"></div>
+		<div> <input type="text" name="category" placeholder="category" style="width:500px"></div>
+		<div> <input type="text" name="author" placeholder="author" style="width:500px"></div>
+
+		
+		<div> <textarea name="text" placeholder="text" cols="60" rows="30"> </textarea> </div>
+		
+		<button type="submit" name="process" value="create">Create new posts</button>
+
+	</form>
+</body> 
+</html>

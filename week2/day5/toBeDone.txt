@@ -1,0 +1,6 @@
+additional function:
+
+
+1. loading tag when searched or aynscrhonous loading????
+
+2. local:host says when asking the questions .

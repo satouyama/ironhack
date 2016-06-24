@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page (lastest)</title>
+</head>
+<body>
+	<% @posts.each do |element| %>
+		<h3> Title: <a href ="/home/<%= @posts.index(element)%>"> <%= element.title %> </a> </h3>
+		<h2> Date : <%= element.date %> </h2>
+	<% end %>
+
+	<div> <a href="/latest_posts"> Sort by Latest</a> </div>
+	
+	<div> <a href="/new_post"> Create new posts</a> </div>
+</body>
+</html>

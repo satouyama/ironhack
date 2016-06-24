@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create new pages</title>
+	<link rel="stylesheet" href="/page_forms.css">
+</head>
+<body>
+	<form action = "/create_page" method = "POST">
+		<div> <input type="text" name="title" placeholder="post title" style="width:500px" value="<%= @item.title%>"></div>
+		<div> <input type="text" name="category" placeholder="category" style="width:500px" value="<%= @item.category%>"></div>
+		<div> <input type="text" name="author" placeholder="author" style="width:500px" value="<%= @item.author%>"></div>
+
+		
+		<div> <textarea name="text" placeholder="text" cols="60" rows="30" > <%= @item.text%> </textarea> </div>
+		
+		<button type="submit" name="process" value="update<%= @index%>">Create new posts</button>
+
+	</form>
+</body> 
+</html>
