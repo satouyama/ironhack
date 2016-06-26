@@ -1,6 +1,8 @@
 additional function:
 
 
-1. loading tag when searched or aynscrhonous loading????
+1. loading tag when searched or aynscrhonous loading????  The search speed is definitely a major 	
 
 2. local:host says when asking the questions .
+
+3. errors raised when not enough items are found
