@@ -3,13 +3,35 @@
 <head>
 	<title>Search Result</title>
 	<link rel="stylesheet" type="text/css" href="/home_style.css">
-	<script type = "text/javascript" src = "/home.js"> </script>
+	<script type = "text/javascript" src = "/home.js">
+		// var arrays = <%= @array_of_questions%>
+
+		// function ask_question(){
+		// 	console.log(arrays)
+		// 	console.log("afdafew")
+
+
+		// }
+		var arrays = <%= @array_of_questions%>
+
+
+
+	 </script>
 </head>
-<body onload = "ask_question()">
-	<div class = "image">
+<body>
+	<div><button type ="button" onclick = "ask_question()"></button></div>
+	
+ 	<div><button type ="button"> Play !</button></div>
+ 	<div class = "image">
 	<% @array_of_movies.each do |movie|%>
-		<img src = "<%= movie.poster%>">
-		<button type ='submit'> This one! </button>
+		
+		<% if movie.rating <5 %>
+			<a onclick="alert('yay')"><img src = "<%= movie.poster%>"></a>
+			<button type ='submit' name="rating" value = "<%= movie.rating%>" onclick = "alert('yay')"> This one! </button>
+		<% else %>
+			<a onclick="alert('nay')"><img src = "<%= movie.poster%>"></a>
+			<button type ='submit' name="rating" value = "<%= movie.rating%>" onclick = "alert('nay')"> This one! </button>
+		<% end %>
 	<% end %>
 	</div>
 </body>
