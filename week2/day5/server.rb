@@ -11,7 +11,19 @@ get "/home" do
 end
 
 
-get "/search" do
+get "/loading" do   # transition page not working. socket error
+  name = params[:name]
+
+  "Pls be patient. Loading........."
+
+  redirect to("/search/#{name}")
+  # redirect to("/search?name=#{name}")
+
+end
+
+get "/search/:name" do
+
+
   key_word = params[:name]
   # puts "-------------if name is being sent =---------------------"
   # p key_word
