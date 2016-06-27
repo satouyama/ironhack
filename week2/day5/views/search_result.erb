@@ -3,25 +3,36 @@
 <head>
 	<title>Search Result</title>
 	<link rel="stylesheet" type="text/css" href="/home_style.css">
-	<script type = "text/javascript" src = "/home.js">
+	<script type="text/javascript">
+			
+		// function haha(){
+
+		// 	console.log("haha")
+		// }
+
 		// var arrays = <%= @array_of_questions%>
 
 		// function ask_question(){
 		// 	console.log(arrays)
 		// 	console.log("afdafew")
+		// 	var x = Math.floor((Math.random() * 3));
 
+			
+		// 	alert ("Which one of this movie has ratings lower than 5?")
 
 		// }
-		var arrays = <%= @array_of_questions%>
+	
 
+	</script>
 
-
-	 </script>
+	</script>
 </head>
 <body>
-	<div><button type ="button" onclick = "ask_question()"></button></div>
 	
- 	<div><button type ="button"> Play !</button></div>
+ 	<div><button type ="button" onclick ="haha()"> Play !</button></div>
+
+ 	<div><button type ="button" onclick = "ask_question()"></button></div>
+
  	<div class = "image">
 	<% @array_of_movies.each do |movie|%>
 		
@@ -34,5 +45,25 @@
 		<% end %>
 	<% end %>
 	</div>
+	<script>
+		function haha(){
+
+			console.log("haha")
+		}
+
+		// var arrays = <%= @array_of_questions%>   // how come this line destroy everything? 
+
+		function ask_question(){
+			console.log(arrays)
+			console.log("afdafew")
+			var x = Math.floor((Math.random() * 3));
+
+			
+			alert ("Which one of this movie has ratings lower than 5?")
+
+		}
+	
+
+	</script>
 </body>
 </html>
