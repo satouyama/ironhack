@@ -2,6 +2,7 @@
 require_relative("lib/Movie.rb")
 
 require "sinatra"
+require "sinatra/reloader"
 require "imdb"
 
 
@@ -12,11 +13,11 @@ end
 
 
 get "/loading" do   # transition page not working. socket error
-  name = params[:name]
+  @name = params[:name]
 
   "Pls be patient. Loading........."
 
-  redirect to("/search/#{name}")
+  redirect to("/search/#{@name}")
   # redirect to("/search?name=#{name}")
 
 end
