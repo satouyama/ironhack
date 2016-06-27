@@ -1,0 +1,98 @@
+.container-fluid{
+
+    background-image: url("background.jpg");
+
+}
+
+
+.calendar_sign, .public_sign, .inspiring_sign, .home_button, .tour_button, .blog_button, .agile_board_sign, .logo_sign, .sign_up_button, .log_in_button{
+	color:#FFFFFF;
+	font-weight:bold;
+	background:none;
+	border-color:transparent;
+}
+
+.logo_sign {
+	background-image: url("https://d78fikflryjgj.cloudfront.net/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png");
+	width:80px;
+	height:33px;
+
+
+}
+
+.list-group {
+	background-color: #e2e4e6;
+	border-radius:4px;
+
+}
+
+.scrollable-menu {
+	height: auto;
+	max-height: 500px;
+	overflow-x:hidden; 
+
+}
+
+
+.card-block {
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 4px;
+	padding:1px;
+	margin-bottom:6px;
+}
+
+.list-cards{
+	padding-left: 5px
+	padding-right:5px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.done_column, .current_sprint_column, .in_progress_column {
+	margin-top: 50px;
+}
+
+.list-header {
+	margin-left: 10px
+}
+
+.done_with_image {
+	height: 265px;
+    background-image: url("https://trello-attachments.s3.amazonaws.com/54c9429a9ba22ac20ae179c8/300x300/bd9da23444730501b39731c335754ab2/shutterstock_190800527222.jpg");
+    /*background-color: rgb(236, 244, 244);/*/
+    /*background-size: cover;*/
+}
+.btn-done-element {
+	overflow:auto;
+}
+
+.menu{
+	background-color: #edeff0;
+	margin-top:50px;
+}
+
+.menu_first_row, .menu_second_row, .menu_third_row{
+
+	height:50px;
+	box-shadow: 0 0 6px rgba(0,0,0,.4);
+	font-size: 20px;
+}
+
+.member {
+	position:relative;
+	top:10px;
+}
+
+.menu_third_row {
+	font-size:15px;
+
+}
+
+.member-status {
+	display: inline;
+}
+
+.menu_events{
+	overflow:auto;
+}
