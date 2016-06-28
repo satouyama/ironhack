@@ -15,6 +15,16 @@
 	height:5%;
 }
 
+.gray_circle {
+	width: 2%;
+	height:2%;
+
+}
+
+.robb_profile {
+	width:2%;
+	height:2%;
+}
 
 
 
@@ -33,6 +43,7 @@
 	position:relative;
 	top:20px;
 	left:10px;
+	color:#aaa;
 }
 
 
@@ -40,7 +51,7 @@
 /*------------------Panels-------------------------------*/
 /*--------------------------------------------------------*/
 
-.panel-default {
+.main_panel {
 	background-color: #F5F5F5;
 }
 
@@ -52,6 +63,106 @@
 
 .bounty_stat {
 	box-shadow: -1px 3px 0px -2.9px rgba(158,146,158,1);
+	margin-bottom: 15px
 }
 
+.number_stat {
+	position:relative;
+	right:10px;
+	bottom:2px;
+}
+
+.bounty_label {
+	margin-bottom: 15px;
+}
+
+.label {
+	position:relative;
+	bottom:2px;
+}
+
+.bounty_content {
+	font-size: 20px;
+	margin-bottom:15px;
+}
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*------------------Button-------------------------------*/
+/*--------------------------------------------------------*/
+.btn.outline {
+	border-radius: 15px;
+	background: none;
+	padding: 5px 10px;
+	margin-left: 10px;
+}
+
+.btn-primary.outline {
+	border: 2px solid #0099cc;
+	color: #0099cc;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+	color: #33a6cc;
+	border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+	border-color: #007299;
+	color: #007299;
+	box-shadow: none;
+
+}
+/*--------------------------------------------------------*/
+/*------------------Panels-------------------------------*/
+/*--------------------------------------------------------*/
+
+.who_like_text, .view_other_comments {
+	display:inline;
+	padding-left: 20px;
+}
+
+.comments {
+	border:0;
+	display:inline; 
+	
+}
+
+
+
+/*--------------------------------------------------------*/
+/*------------------Glyphicons-------------------------------*/
+/*--------------------------------------------------------*/
+
+.glyphicon-comment {
+	color:#ccc;
+	border-color: black;
+}
+
+.comment_like_section {
+	margin-bottom: 10px;
+}
+
+.expand_comment_option {
+	margin-bottom: 20px;
+}
+/*--------------------------------------------------------*/
+/*------------------Text------------------------------*/
+/*--------------------------------------------------------*/
+
+.comment_text {
+	font-size:15px;
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+
+.comment_name {
+	padding-left: 10px;
+}
+
+.comment_content {
+	color:#aaa;
+}
 
