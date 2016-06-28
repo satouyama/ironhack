@@ -1,0 +1,18 @@
+.header-image {
+	background-image: url("small.gif");
+	background-repeat:no-repeat;
+	height:250px;
+}
+@media screen and (min-width:600px) {
+	.header-image {
+		background-image: url("medium.gif");
+		height:500px;
+	}	
+}
+@media screen and (min-width:1200px) {
+	.header-image {
+		background-image: url("large.gif");
+		height:1000px;
+	}
+}
+
