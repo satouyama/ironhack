@@ -263,9 +263,9 @@ describe("the JavaScript language", function(){
 
 // here 
     it("passes primitive types as values (a copy) to functions", function(){
-        function example(arg){
-            arg = "test!";
-        }
+            function example(arg){
+                arg = "test!";
+            }
 
         var x = 1;
         var y = "example";
@@ -482,7 +482,7 @@ describe("the JavaScript language", function(){
 
         var obj = new Obj();
         expect(obj.theName()).toEqual(undefined);
-        expect(obj.theName).toBe(new Obj().theName);
+        expect(obj.theName).toBe(new Obj().theName);    // private
     });
 
     it("can define a factory", function(){
@@ -623,7 +623,7 @@ describe("the JavaScript language", function(){
         var attack = function(){ // private method
             self.energy -= 5;
         };
-        this.playWithFriend = function(friend){
+        this.palyWithFriend = function(friend){
             if (friend.isPurring())
                self.energy += 10; 
         };
@@ -671,7 +671,7 @@ describe("the JavaScript language", function(){
 
         it("can be bound in modern browsers with BIND", function(){
             var feed = cat.feed;
-            var bound = feed.bind(cat);
+            var bound = feed.bind(cat);  // always will be cat setting the context 
 
             bound();
 
@@ -685,7 +685,7 @@ describe("the JavaScript language", function(){
 
             otherCat.feed();
             expect(otherCat.kilos).toEqual(11);
-            //expect(cat.kilos).toEqual();
+            expect(cat.kilos).toEqual(1);
         });
 
         it("can be handled using the SELF trick", function(){
@@ -694,7 +694,7 @@ describe("the JavaScript language", function(){
 
             lion.hunt();
 
-            //expect(lion.energy).toEqual();
+            expect(lion.energy).toEqual(185);
         });
 
         it("interprest the THIS when the function is executed", function(){
@@ -706,7 +706,7 @@ describe("the JavaScript language", function(){
             };
             lion.hunt();
 
-            //expect(lion.energy).toEqual();
+            expect(lion.energy).toEqual(4000);
         });
       });
 
@@ -716,7 +716,7 @@ describe("the JavaScript language", function(){
             var subscribersInfo = [];
 
             this.addSubscriber = function(callback){
-               var eventNames = [].slice.call(arguments).slice(1);
+               var eventNames = [].slice.call(arguments).slice(1);  /// what the fuck  slice without ()  where is the arguments coming from? 
                subscribersInfo.push({
                  subscriber: callback, eventNames: eventNames});
              };
@@ -726,7 +726,7 @@ describe("the JavaScript language", function(){
                    var info = subscribersInfo[i];
                    for (var j = 0, lenj = info.eventNames.length; j < lenj; j++){
                        if (info.eventNames[j] == eventName)
-                           info.subscriber(eventName, eventArgs);
+                           info.subscriber(eventName, eventArgs);  /// callback function used
                    }
                }
             };
@@ -743,7 +743,7 @@ describe("the JavaScript language", function(){
 
             lion.hunt();
 
-            //expect(called).toBe();
+            expect(called).toBe(true);
         });
 
         it("implements the observer pattern (one2many)", function(){
