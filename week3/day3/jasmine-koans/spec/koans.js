@@ -718,7 +718,7 @@ describe("the JavaScript language", function(){
             this.addSubscriber = function(callback){
                var eventNames = [].slice.call(arguments).slice(1);  /// what the fuck  slice without ()  where is the arguments coming from? 
                subscribersInfo.push({
-                 subscriber: callback, eventNames: eventNames});
+                 subscriber: callback, eventNames: eventNames});    // callback here
              };
 
             this.emit = function(eventName, eventArgs){
