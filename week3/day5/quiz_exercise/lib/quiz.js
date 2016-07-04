@@ -36,7 +36,10 @@ class Quiz {
 	}
 
 	ask(){
-		
+
+		console.log("----------------current game data--------------------")
+		console.log(this.question_index)
+
 
 		if (this.check()){
 			console.log("------------congratz!--------------")

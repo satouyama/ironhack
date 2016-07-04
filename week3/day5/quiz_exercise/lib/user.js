@@ -53,7 +53,22 @@ class User {
 	sendData(){
 		// console.log("---------------------data before sending---------------")
 		// console.log(this.data)
+
+		var old_user = this.name;
+
 		this.quiz.saved_data = this.data;
+		this.quiz.questions_set = this.data[old_user][0].questions_set;
+		this.quiz.question_index = this.data[old_user][0].question_index;
+		this.quiz.points = this.data[old_user][0].points;
+		this.quiz.award_points = this.data[old_user][0].award_points;
+		this.quiz.bonus_index = this.data[old_user][0].bonus_index;
+
+		console.log("-------------sending data-----------------------")
+		console.log(this.quiz)
+
+		this.quiz.ask();
+
+
 	}
 
 	direct(err, answer) {
@@ -101,9 +116,10 @@ class User {
 
 
 
-		if (name.toUpperCase() in this.data ){
+		if (name in this.data ){
 			console.log(" \n --------------------log in-----------")
 			console.log("you have successfully logged in!!")
+			this.name = name;
 			this.loadData();
 
 		}else{
