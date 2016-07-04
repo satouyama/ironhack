@@ -6,6 +6,8 @@ require "sinatra/reloader"
 require "imdb"
 
 
+# is there a way to set up that transition loading page?
+# script var arrays ruined everything. 
 
 get "/home" do
   erb(:home)
