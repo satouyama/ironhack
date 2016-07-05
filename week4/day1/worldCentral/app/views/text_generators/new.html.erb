@@ -1,0 +1,23 @@
+<h1>Input</h1>
+
+<!-- ***** New ***** -->
+<form action="/text_generators" method = "post">
+  
+    
+  <input type="number" name = "number">
+
+  <select name ="choice">
+	  <option value = "paragraphs">Paragraphs</option>
+	  <option value ="words">Words</option>
+
+	</select>
+<!--   <label for="paragraphs"> Paragraphs</label>
+  <input type="checkbox" name ="paragraphs" id ="paragraphs">
+  <label for="words"> Words </label>
+  <input type="checkbox" name = "words" id="words"> -->
+
+  <input type="hidden" name="authenticity_token" value ="<%= form_authenticity_token %>">
+
+  <button type="submit"> Submit Text</button>
+
+</form>

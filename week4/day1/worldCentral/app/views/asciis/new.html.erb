@@ -1,0 +1,14 @@
+<h1>Submit text for this</h1>
+
+<!-- ***** New ***** -->
+<form action="/asciis" method = "post">
+  <div>
+    <label for="asciis_user_text">Text</label>
+    <textarea name="user_text" id="asciis_user_text"></textarea>
+  </div>
+
+  <input type="hidden" name="authenticity_token" value ="<%= form_authenticity_token %>">
+
+  <button type="submit"> Submit Text</button>
+
+</form>

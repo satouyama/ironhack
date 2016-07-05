@@ -1,0 +1,24 @@
+<h1> Your input has length: <%= @word_count %></h1>
+
+
+
+<h2>Original text is 
+
+<p><%= @text %></p>
+
+</h2>
+
+
+
+<h3>Estimated reading time is around
+
+	
+<p>
+	<%= (@word_count / 275).to_f  %>
+	seconds
+</p>
+
+
+
+<%= link_to("Home", :home) %>
+</h3>

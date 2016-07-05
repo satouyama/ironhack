@@ -6,10 +6,10 @@ class SiteController < ApplicationController
 
   end
 
-  # def controller
-  #   render "contact"
+  def controller
+    render "contact"
 
-  # end
+  end
 
   
 
