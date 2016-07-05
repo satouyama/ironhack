@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/", to: "site#home"    # if get routes / go to    it's actually a hash {to: "site#home"} 
   get "/contact", to: "site#contact" 
 
+
+  get "/projects" => "projects#index"
 end

@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+
+Project.create([{name:"ironHACK",description:"Coding BOOOTCAMP"},{name:"papa johns", description:"hahaha"},{name:"taco bell",description:"great"}])
+
+
+
+
