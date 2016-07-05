@@ -1,10 +1,7 @@
 require 'test_helper'
 
-class ProjectTest < ActiveSupport::TestCase
+class ContactsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
-
-
-  
 end

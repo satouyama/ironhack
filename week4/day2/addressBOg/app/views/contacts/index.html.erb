@@ -1,0 +1,14 @@
+<h1> Contact List</h1>
+
+<%= link_to("Add new contacts", new_path) %>
+
+<ul>
+	<% @contacts_list.each do |x| %>
+
+		<li>	
+			<%= x.name %>
+
+		</li>
+	<% end %>
+
+</ul>
