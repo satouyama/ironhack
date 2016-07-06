@@ -1,0 +1,35 @@
+<h1>Create new Product</h1>
+
+
+
+<% if @current_product.errors.any? %>
+	<ul>
+		<% @current_product.errors.full_messages.each do |error_msg| %>
+			<li> <%= error_msg %></li>
+
+		<% end %>
+
+	</ul>
+<% end %>
+
+
+	
+<%= form_for [@current_user, @current_product] do |f| %>
+
+
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+
+
+	<%= f.label :deadline %>
+	<%= f.date_field :deadline %>
+
+
+	<%= f.button %>
+
+
+<% end %>

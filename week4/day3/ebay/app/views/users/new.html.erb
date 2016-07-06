@@ -1,0 +1,26 @@
+<style>
+
+.field_with_errors { display: inline; }
+
+
+</style>
+<h1>Create new Users</h1>
+
+
+
+<!-- make sure it display the form tag -->
+<%= form_for @new_user do |f| %>   
+
+	<div>
+	<%= f.label :name%>
+	<%= f.text_field :name%>
+	</div>
+	
+	<div>
+	<%= f.label :email%>
+	<%= f.text_field :email%>
+	</div>
+
+	<%= f.button %>
+
+<% end %>

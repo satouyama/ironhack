@@ -16,3 +16,61 @@ Project.create([{name:"apple",description:"Coding BOOOTCAMP"},{name:"peach", des
 
 Project.create([{name:"banana",description:"Coding BOOOTCAMP"},{name:"watermelon", description:"hahaha"},{name:"drop it",description:"great"}])
 
+
+TimeEntry.create(
+  [ 
+    {hours: 1,
+    minutes: 45,
+    comments: "Did stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"ironHACK").id},
+   
+    {hours: 2,
+    minutes: 43,
+    comments: "eat stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"papa johns").id},
+   
+    {hours: 3,
+    minutes: 12,
+    comments: "shit stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"eat it").id},
+
+    {hours: 1,
+    minutes: 45,
+    comments: "drink stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"watermelon").id},
+
+    {hours: 1,
+    minutes: 45,
+    comments: "Did stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"taco bell").id},
+   
+    {hours: 2,
+    minutes: 43,
+    comments: "eat stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"apple").id},
+   
+    {hours: 3,
+    minutes: 12,
+    comments: "shit stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"banana").id},
+
+    {hours: 1,
+    minutes: 45,
+    comments: "drink stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"peach").id},
+
+    {hours: 1,
+    minutes: 45,
+    comments: "drink stuff",
+    date: Time.now,
+    project_id: Project.find_by(name:"drop it").id},
+
+  ])

@@ -1,0 +1,36 @@
+<h1>List of Products</h1>
+
+<!-- # <p> current_products is nil? <%= @current_products != nil  %></p>
+ -->
+
+<ul>
+	<% if !@current_products.empty? %>
+		<% @current_products.each do |product| %>
+<!-- 
+			<p>hahahahaha</p> -->
+			<li>				
+				<%= link_to "#{product.title}", "/users/#{product.user_id}/products/#{product.id}" %>
+			</li>
+		<% end  %>
+
+	<% else %>
+		<!-- <p>life is good!!</p> -->
+
+		<p>This user has an empty shopping cart</p>					
+
+	<% end %>
+</ul>
+
+<%= link_to("Home Page", "/users") %>
+
+<%= link_to "Create new Products", "/users/#{@current_user.id}/products/new" %>
+
+
+
+
+
+
+
+
+
+
