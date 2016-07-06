@@ -1,0 +1,15 @@
+<h1>Search Results!</h1>
+
+
+<ul>
+	<% @found_list.each do |x| %>
+
+		<li>	
+		
+			<%= link_to("#{x.name}", "/detail/#{x.id}") %>
+
+
+		</li>
+	<% end %>
+
+</ul>

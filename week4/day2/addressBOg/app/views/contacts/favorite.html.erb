@@ -1,0 +1,15 @@
+<h1>Favorite List</h1>
+
+
+<ul>
+	<% @favorite_list.each do |x| %>
+
+		<li>	
+		
+			<%= link_to("#{x.name}", "/detail/#{x.id}") %>
+
+
+		</li>
+	<% end %>
+
+</ul>

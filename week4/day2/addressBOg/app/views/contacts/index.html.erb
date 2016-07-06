@@ -2,13 +2,31 @@
 
 <%= link_to("Add new contacts", new_path) %>
 
+<%= link_to("Favorite List", "/favorite") %>
+
 <ul>
 	<% @contacts_list.each do |x| %>
 
 		<li>	
-			<%= x.name %>
+		
+			<%= link_to("#{x.name}", "/detail/#{x.id}") %>
+			<%= link_to("Favorite", "/favorite/#{x.id}") %>
+
 
 		</li>
 	<% end %>
 
 </ul>
+
+
+<form accept-charset="UTF-8" action="/search" method="post">
+
+
+  <label for="keyword">Keyword</label>
+  <input type="search" id = "keyword" name="keyword">
+
+
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <input type="submit"></input>
+
+</form>
