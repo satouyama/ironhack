@@ -6,4 +6,10 @@ Rails.application.routes.draw do
 
 
   get "/projects" => "projects#index"
+
+  get "projects/new" => "projects#new"  # has to go before projects/:id
+  get "/projects/:id" => "projects#show"
+
+  post "/projects" => "projects#create"
+
 end

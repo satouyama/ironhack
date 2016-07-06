@@ -18,7 +18,7 @@ class ContactsController < ApplicationController
   def search
     keyWord = params[:keyword]
 
-    @found_list = Contact.where("name=?", /\A[#{keyWord}]/)
+    @found_list = Contact.where("name =~ ?", '\A[#{keyWord}]')
 
 
 
