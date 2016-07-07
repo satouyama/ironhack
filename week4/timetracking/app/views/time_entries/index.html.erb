@@ -19,6 +19,7 @@
 
 
 		 	<%= link_to("Edit", "/projects/#{@my_project.id}/time_entries/#{entry.id}/edit") %>
+		 	<%= link_to("Delete", project_time_entry_path(@my_project,entry) , method: :delete, data: {confirm: "Are you sure?"}) %>
 		</li>
 
 	<% end %>
