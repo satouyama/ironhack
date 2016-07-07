@@ -46,13 +46,23 @@ class ProductsController < ApplicationController
   end
 
   def show
+
+
+
+
+
+
     
-    @product_id = params[:product_id]
+    @product_id = params[:id]
     @id = params[:user_id]
     # render plain: params.inspect
-    @current_product = Product.find_by("@product_id AND )
 
-    @bids_list = Bid.where(product_id: params[:product_id])
+    @current_product = Product.find_by("id = ? AND user_id =?", @product_id, @id)
+
+    @old_bids_list = @current_product.bids
+
+    # render plain: @old_bids_list.inspect
+    @bids_list = @old_bids_list.order(:amount)
 
     render "show"
 

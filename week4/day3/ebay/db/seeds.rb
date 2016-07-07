@@ -29,3 +29,15 @@ Product.create(
     {title:"this",description:"hmhm@haha.com",deadline:(Time.now + 1.hour),user_id:6}
   ]
 )
+
+
+Bid.create(
+  [
+    {amount:"100",bidder_email:"hehe@haha.com",product_id:1},
+    {amount:"100",bidder_email:"haha@haha.com",product_id:2},
+    {amount:"100",bidder_email:"hihi@haha.com",product_id:3},
+    {amount:"100",bidder_email:"hoho@haha.com",product_id:4},
+    {amount:"100",bidder_email:"hmhm@haha.com",product_id:5},
+    {amount:"100",bidder_email:"huhu@haha.com",product_id:6}
+  ]
+)

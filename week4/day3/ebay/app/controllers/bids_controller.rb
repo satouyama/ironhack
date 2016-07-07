@@ -7,12 +7,16 @@ class BidsController < ApplicationController
 
     @bid_product = Product.find(params[:product_id])
     @bid_product.bids.new(amount: @bid_amount, bidder_email: @bidder_email)
-    @bid_product.save
+    
+    if User.exists?(email: @bidder_email)
+        @bid_product.save
+    end
+
 
     # render plain: Bid.all.inspect
     
-    @bids_list = Bid.where(product_id: params[:product_id])
-
+    @old_bids_list = Bid.where(product_id: params[:product_id])
+    @bids_list = @old_bids_list.order(:amount)
 
 
     
@@ -27,7 +31,7 @@ class BidsController < ApplicationController
     @current_product = Product.find(@product_id)
 
 
-    render "new"
+    render "products/show"
 
   end
 end

@@ -21,31 +21,39 @@
 
 </ul>
 
-<%= link_to("Home Page", "/users") %>
+<% if @current_product.deadline < (Time.now)%>
+	<% winner_email =  @bids_list.first.bidder_email%>
+	<% winner = User.find_by(email: winner_email)%>
+	<h1>The winnder is!!!!!! <%= winner.name  %></h1>
+	
+	<h1>Past Bids</h1>
+<% else %>
+	
+
+	<h1>Make a bid here!</h1>	
+	<%= form_for [@current_user, @current_product, Bid.new] do |f| %>
 
 
-<h1>Make a bid here!</h1>	
-<%= form_for [@current_user, @current_product, Bid.new] do |f| %>
+		<%= f.label :amount %>
+		<%= f.text_field :amount %>
 
 
-	<%= f.label :amount %>
-	<%= f.text_field :amount %>
+		<%= f.label :bidder_email %>
+		<%= f.text_field :bidder_email%>
 
 
-	<%= f.label :bidder_email %>
-	<%= f.text_field :bidder_email%>
+		<%= f.button %>
 
 
-	<%= f.button %>
+	<% end %>
+
+	<h1>Current Bids</h1>
 
 
 <% end %>
 
 
 
-
-
-<h1>Current Bids</h1>
 
 
 <ul>
@@ -65,3 +73,6 @@
 	<% end %>
 </ul>
 
+
+
+<%= link_to("Home Page", "/users") %>

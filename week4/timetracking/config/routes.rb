@@ -1,27 +1,31 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  resources :projects, only: [:index, :show, :new, :create] do   # 404 rather than internal server error. 
+    resources :time_entries, except: [:show]
+  end
+
   get "/", to: "site#home"    # if get routes / go to    it's actually a hash {to: "site#home"} 
   get "/contact", to: "site#contact" 
 
 
-  get "/projects" => "projects#index"
+  # get "/projects" => "projects#index"
 
-  get "/projects/new" => "projects#new"  # has to go before projects/:id
-  get "/projects/:id" => "projects#show"
+  # get "/projects/new" => "projects#new"  # has to go before projects/:id
+  # get "/projects/:id" => "projects#show"
 
-  post "/projects" => "projects#create"
+  # post "/projects" => "projects#create"
 
-  get "/projects/:project_id/time_entries" => "time_entries#index"
+  # get "/projects/:project_id/time_entries" => "time_entries#index"
 
-  get "/projects/:project_id/time_entries/new" => "time_entries#new"
+  # get "/projects/:project_id/time_entries/new" => "time_entries#new"
 
-  post "/projects/:project_id/time_entries" => "time_entries#create", as: :project_time_entries
+  # post "/projects/:project_id/time_entries" => "time_entries#create", as: :project_time_entries
 
-  get "/projects/:project_id/time_entries/:id/edit" => "time_entries#edit"
+  # get "/projects/:project_id/time_entries/:id/edit" => "time_entries#edit"
 
-  patch "/projects/:project_id/time_entries/:id" => "time_entries#update", as: :project_time_entry
+  # patch "/projects/:project_id/time_entries/:id" => "time_entries#update", as: :project_time_entry
 
-  delete "/projects/:project_id/time_entries/:id" => "time_entries#destroy"
+  # delete "/projects/:project_id/time_entries/:id" => "time_entries#destroy"
 
 end
