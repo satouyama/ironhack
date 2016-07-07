@@ -20,4 +20,8 @@ Rails.application.routes.draw do
 
   get "users/:user_id/products/:product_id" => "products#show"
 
+
+#Bids
+  post "/users/:user_id/products/:product_id/bids" => "bids#create", as: :product_bids
+
 end

@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706213700) do
+ActiveRecord::Schema.define(version: 20160707003924) do
 
   create_table "bids", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "amount"
+    t.integer  "product_id"
+    t.string   "bidder_email"
   end
 
   create_table "products", force: :cascade do |t|

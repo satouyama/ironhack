@@ -51,6 +51,8 @@ class ProductsController < ApplicationController
     # render plain: params.inspect
     @current_product = Product.find(@product_id)
 
+    @bids_list = Bid.where(product_id: params[:product_id])
+
     render "show"
 
   end
