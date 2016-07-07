@@ -11,15 +11,18 @@
 <ul>
 	<% @my_entries.each do |entry| %>
 
-<li>
+		<li>
 
-		<%= entry.hours %> h	
-		<%= entry.minutes %> m -
-		<%= entry.date %>
-</li>
+			<%= entry.hours %> h	
+			<%= entry.minutes %> m -
+			<%= entry.date %>
+
+
+		 	<%= link_to("Edit", "/projects/#{@my_project.id}/time_entries/#{entry.id}/edit") %>
+		</li>
 
 	<% end %>
-
+	
 
 
 </ul>
