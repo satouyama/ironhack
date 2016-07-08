@@ -9,3 +9,7 @@ class Concert < ApplicationRecord
 
   has_many :comments
 end
+
+
+  # <%= f.label :city %>
+  # <%= f.text_field :city %>

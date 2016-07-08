@@ -28,3 +28,15 @@ Concert.create(
 
 
  Concert.find_each { |concert| Concert.reset_counters(concert.id, :comments) }
+
+
+
+City.create([
+  {name: "Miami"},
+  {name: "London"},
+  {name: "Shanghai"},
+  {name: "New York"},
+  {name: "New Delhi"},
+  {name: "Rio"},
+  {name: "Chicago"}
+  ])

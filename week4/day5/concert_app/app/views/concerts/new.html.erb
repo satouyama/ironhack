@@ -25,7 +25,8 @@
 	<%= f.text_field :venue %>
 
 	<%= f.label :city %>
-	<%= f.text_field :city %>
+	<%= f.collection_select :city, City.all, :name, :name %>
+
 
 	<%= f.label :date %>
 	<%= f.date_field :date %>
