@@ -1,0 +1,39 @@
+<%= render "partials/doc_header" %>
+
+
+
+
+
+<% if @results_list != [] %>
+	<h2>Results list</h2>
+	<ul>
+	
+
+	<% @results_list.each do |result| %>
+	
+		<li> Artist: <%= link_to("#{result.artist}", "/concerts/#{result.id}") %></li>
+		<li> Price: <%= result.price %></li>
+		<li> Date: <%= result.date %></li>
+		<br>
+
+	<% end %>
+
+	</ul>
+
+
+
+<% else %>
+	<p>You are crazy. Go back to work and earn more money.</p>
+
+	<h1>The cheapest one is: <%= link_to("#{@cheapest.artist} and its price is about  #{@cheapest.price}", "/concerts/#{@cheapest.id}") %></h1>
+
+
+<% end %>
+
+
+
+
+
+
+
+<%= render "partials/footer" %>

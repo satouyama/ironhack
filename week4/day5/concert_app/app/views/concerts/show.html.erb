@@ -25,14 +25,15 @@
 	</ul>
 <% end %>
 
+<div class="panel panel-default comment_box">
+    <div class="panel-body">Comment Box</div>
 
-	
-<%= form_for [@specific_concert,@new_comment], html: { class: "new_comment_form" } do |f| %>
+    <%= form_for [@specific_concert,@new_comment], html: { class: "new_comment_form" } do |f| %>
 
 
 	<%= f.label :user_name %>
 	<%= f.text_field :user_name %>
-
+	<br>
 
 	<%= f.label :comment %>
 	<%= f.text_area :comment, :cols => "50", :rows => "10" %>
@@ -40,7 +41,12 @@
 	<%= f.button %>
 
 
-<% end %>
+	<% end %>
+ 
+
+</div>
+	
+
 
 <ul>
 	<h2>Comments History</h2>

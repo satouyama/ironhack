@@ -1,0 +1,21 @@
+<%= render "partials/doc_header" %>
+
+
+
+
+
+
+<h1>Find some cheap ones plslsssssss</h1>
+
+
+
+<%= form_tag("/searches/results", method: "get") do %>
+  <%= label_tag(:price, "Search for prices lower than:") %>
+  <%= text_field_tag(:price) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+
+
+<%= render "partials/footer" %>

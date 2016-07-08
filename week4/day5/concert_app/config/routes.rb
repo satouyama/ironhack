@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  
 
+  get "/searches/results" => "searches#find"
 
+  resources :searches
 end
