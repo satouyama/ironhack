@@ -48,10 +48,6 @@ class ProductsController < ApplicationController
   def show
 
 
-
-
-
-
     
     @product_id = params[:id]
     @id = params[:user_id]
@@ -62,7 +58,7 @@ class ProductsController < ApplicationController
     @old_bids_list = @current_product.bids
 
     # render plain: @old_bids_list.inspect
-    @bids_list = @old_bids_list.order(:amount)
+    @bids_list = @old_bids_list.order(amount: :desc)
 
     render "show"
 

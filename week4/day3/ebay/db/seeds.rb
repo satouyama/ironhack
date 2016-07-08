@@ -21,12 +21,12 @@ User.create(
 
 Product.create(
  [
-    {title:"food",description:"haha@haha.com",deadline:(Time.now + 1.hour),user_id:1},
-    {title:"aplle",description:"hehe@haha.com",deadline:(Time.now + 1.hour),user_id:2},
-    {title:"pig",description:"hoho@haha.com",deadline:(Time.now + 1.hour),user_id:3},
-    {title:"juice",description:"hihi@haha.com",deadline:(Time.now + 1.hour),user_id:4},
-    {title:"idont'know",description:"huhu@haha.com",deadline:(Time.now + 1.hour),user_id:5},
-    {title:"this",description:"hmhm@haha.com",deadline:(Time.now + 1.hour),user_id:6}
+    {title:"food",description:"haha@haha.com",deadline:(Time.now + 1.hour),user_id:1,minimum:50},
+    {title:"aplle",description:"hehe@haha.com",deadline:(Time.now + 1.hour),user_id:2,minimum:50},
+    {title:"pig",description:"hoho@haha.com",deadline:(Time.now + 1.hour),user_id:3,minimum:50},
+    {title:"juice",description:"hihi@haha.com",deadline:(Time.now + 1.hour),user_id:4,minimum:50},
+    {title:"idont'know",description:"huhu@haha.com",deadline:(Time.now + 1.hour),user_id:5,minimum:50},
+    {title:"this",description:"hmhm@haha.com",deadline:(Time.now + 1.hour),user_id:6,minimum:50}
   ]
 )
 
