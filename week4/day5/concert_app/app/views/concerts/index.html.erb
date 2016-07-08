@@ -3,16 +3,30 @@
     
 <div class ="all_concerts_list">
      <div class = "col-md-9">
-        <h1>Concerts happening today</h1>
+        <div class = "col-md-12 row_concerts_today_head">
+            <h1>Concerts happening today</h1>
+        </div>
+
         <% if @all_concerts !=[] %>
             <% @all_concerts.each do |concert| %>
                 <% month = concert.date.month %>
                 <% mday = concert.date.mday %>
                 <% if ((month == Time.now.month) && (mday == Time.now.mday)) %>
-                    <h4>Concerts Names</h4>
+                    <div class ="col-md-4">
+                        <a href="/concerts/#{concert.id}">
+                            <div class = "artist_image">        
+                                 <%=  image_tag("concert", height: '300', width: '250')%>
+                            </div>
 
-                     <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
-                     <%=  image_tag("concert", height: '32', width: '32')%>
+
+                            <div class = "artist_title">
+                                <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+
+                            </div>
+                        </a>
+                       
+                     </div>
+                    
                 <% end %>
             <% end %>
 
@@ -26,7 +40,7 @@
      </div>
 
 
-    <div class = "col-md-3">
+    <div class = "col-md-3 future_concerts_side">
         <h1>Concerts in the future</h1>
         <% if @all_concerts !=[] %>
             <% @all_concerts.each do |concert| %>
@@ -35,7 +49,7 @@
                 <% if ((mday != Time.now.mday) || (month != Time.now.month))  %>
                     <h4>Concerts Names</h4>
 
-                    <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                        <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
                     <%=  image_tag("concert", height: '32', width: '32')%>
 
                 <% end %>
@@ -50,12 +64,12 @@
     </div>
 </div>
 
-
- <%= link_to("Add a new concert", "/concerts/new") %>
- <br>
- <%= link_to("Search for affordable concerts in the future", "/searches") %>
- <br>
-  <%= link_to("Get a top 10 popular concert list", "/top_10_popular") %>
+    <!-- 
+     <%= link_to("Add a new concert", "/concerts/new") %>
+     <br>
+     <%= link_to("Search for affordable concerts in the future", "/searches") %>
+     <br>
+      <%= link_to("Get a top 10 popular concert list", "/top_10_popular") %> -->
 
 
 
