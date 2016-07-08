@@ -1,18 +1,31 @@
 <%= render "partials/doc_header" %>
 
 
-<h1>Concert Details</h1>
+<h1>Concert Details
+
+	<div class = "concert_image">
+		<%= image_tag("concert", height: '500', width: '800') %>
+
+	</div>	
+</h1>
 
 
 
 <ul>
+
+
 	<li>Artist: <%=@specific_concert.artist%></li>
 	<li>Venue: <%=@specific_concert.venue%></li>
 	<li>City: <%=@specific_concert.city%></li>
 	<li>Date: <%=@specific_concert.date%></li>
 	<li>Description: <%=@specific_concert.description%></li>
 	<li>Price: <%=@specific_concert.price%></li>
+
+
+
 </ul>
+
+
 
 
 <% if @new_comment.errors.any? %>

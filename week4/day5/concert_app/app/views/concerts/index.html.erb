@@ -12,6 +12,7 @@
                     <h4>Concerts Names</h4>
 
                      <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                     <%=  image_tag("concert", height: '32', width: '32')%>
                 <% end %>
             <% end %>
 
@@ -34,7 +35,9 @@
                 <% if ((mday != Time.now.mday) || (month != Time.now.month))  %>
                     <h4>Concerts Names</h4>
 
-                     <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                    <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                    <%=  image_tag("concert", height: '32', width: '32')%>
+
                 <% end %>
             <% end %>
 
