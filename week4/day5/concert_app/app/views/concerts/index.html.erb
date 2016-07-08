@@ -1,0 +1,26 @@
+<%= render "partials/doc_header" %>
+
+    <div class ="all_concerts_list">
+        <ul>
+            <% if @all_concerts !=[] %>
+                <% @all_concerts.each do |concert| %>
+                    <h2>Concerts Names</h2>
+
+                    <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                <% end %>
+
+            <% else %>
+                <p>No concerts in the near future</p>
+            <% end %>
+
+
+        </ul>
+
+
+        <%= link_to("Add a new concert", "concerts/new") %>
+    </div>
+
+
+
+
+<%= render "partials/footer" %>
