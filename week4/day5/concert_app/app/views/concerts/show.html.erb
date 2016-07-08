@@ -15,6 +15,52 @@
 </ul>
 
 
+<% if @new_comment.errors.any? %>
+	<ul>
+		<% @new_comment.errors.full_messages.each do |error_msg| %>
+			<li> <%= error_msg %></li>
+
+		<% end %>
+
+	</ul>
+<% end %>
+
+
+	
+<%= form_for [@specific_concert,@new_comment], html: { class: "new_comment_form" } do |f| %>
+
+
+	<%= f.label :user_name %>
+	<%= f.text_field :user_name %>
+
+
+	<%= f.label :comment %>
+	<%= f.text_area :comment, :cols => "50", :rows => "10" %>
+
+	<%= f.button %>
+
+
+<% end %>
+
+<ul>
+	<h2>Comments History</h2>
+	<% if @old_comments !=[] %>
+            <% @old_comments.each do |comment| %>
+				<li>
+					User: <%= comment.user_name %>
+				</li>
+				<li>
+					Comment: <%= comment.comment %>
+				</li>
+
+            <% end %>
+
+    <% else %>
+		<h3>No Comments Yet</h3>
+
+    <% end %>
+</ul>
+
 
 
 <%= render "partials/footer" %>

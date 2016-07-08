@@ -14,5 +14,14 @@ Concert.create(
     {artist:"hihi",venue:"hihi venue",city: "hihi city",date:Time.now + 1.month, price:100,description:"hihi good"},
     {artist:"hoho",venue:"hoho venue",city: "hoho city",date:Time.now + 60.day, price:100,description:"hoho good"},
     {artist:"hmhm",venue:"hmhm venue",city: "hmhm city",date:Time.now + 2.day, price:100,description:"hmhm good"},
-    {artist:"huhu",venue:"huhu venue",city: "huhu city",date:Time.now + 1.day, price:100,description:"huhu good"},
+    {artist:"huhu",venue:"huhu venue",city: "huhu city",date:Time.now + 1.day, price:100,description:"huhu good"}
+ ])
+
+
+ Comment.create([
+    {user_name: "troll1",comment:"this is great",concert_id: 1},
+    {user_name: "troll2",comment:"this is great",concert_id: 2},
+    {user_name: "troll3",comment:"this is great",concert_id: 3},
+    {user_name: "troll4",comment:"this is great",concert_id: 4},
+    {user_name: "troll5",comment:"this is great",concert_id: 5},
   ])

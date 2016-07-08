@@ -10,7 +10,12 @@ class ConcertsController < ApplicationController
     concert_id = params[:id]
     @specific_concert = Concert.find(concert_id)
 
+    @new_comment = Comment.new
+    @old_comments = Comment.where(concert_id:concert_id)
+
+    # render plain: @old_comments.inspect
     render "show"
+    
 
 
   end
