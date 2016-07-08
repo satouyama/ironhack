@@ -1,26 +1,56 @@
 <%= render "partials/doc_header" %>
 
-    <div class ="all_concerts_list">
-        <ul>
-            <% if @all_concerts !=[] %>
-                <% @all_concerts.each do |concert| %>
-                    <h2>Concerts Names</h2>
+    
+<div class ="all_concerts_list">
+     <div class = "col-md-9">
+        <h1>Conceerts happening today</h1>
+        <% if @all_concerts !=[] %>
+            <% @all_concerts.each do |concert| %>
+                <% month = concert.date.month %>
+                <% mday = concert.date.mday %>
+                <% if ((month == Time.now.month) && (mday == Time.now.mday)) %>
+                    <h4>Concerts Names</h4>
 
-                    <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                     <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
                 <% end %>
-
-            <% else %>
-                <p>No concerts in the near future</p>
             <% end %>
 
+        <% else %>
+                <p>No concerts today</p>
+        <% end %>
 
-        </ul>
 
 
-        <%= link_to("Add a new concert", "concerts/new") %>
+
+     </div>
+
+
+    <div class = "col-md-3">
+        <h1>Concerts in the future</h1>
+        <% if @all_concerts !=[] %>
+            <% @all_concerts.each do |concert| %>
+                <% month = concert.date.month %>
+                <% mday = concert.date.mday %>
+                <% if ((mday != Time.now.mday) || (month != Time.now.month))  %>
+                    <h4>Concerts Names</h4>
+
+                     <%= link_to("#{concert.artist}", "/concerts/#{concert.id}") %>
+                <% end %>
+            <% end %>
+
+        <% else %>
+                <p>No concerts in the near future</p>
+        <% end %>
+
+
+
     </div>
+</div>
 
+
+ <%= link_to("Add a new concert", "/concerts/new") %>
 
 
 
 <%= render "partials/footer" %>
+  
