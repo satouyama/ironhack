@@ -19,5 +19,15 @@ class SearchesController < ApplicationController
 
   end
 
+  def popular
+    @top_10 = Concert.order("comments_count DESC").limit(10)
+
+    render "popular"
+
+
+
+
+  end
+
 
 end

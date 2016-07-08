@@ -10,4 +10,9 @@ Rails.application.routes.draw do
   get "/searches/results" => "searches#find"
 
   resources :searches
+
+
+  get "/top_10_popular" => "searches#popular"
+
+  
 end

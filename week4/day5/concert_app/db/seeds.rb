@@ -25,3 +25,6 @@ Concert.create(
     {user_name: "troll4",comment:"this is great",concert_id: 4},
     {user_name: "troll5",comment:"this is great",concert_id: 5},
   ])
+
+
+ Concert.find_each { |concert| Concert.reset_counters(concert.id, :comments) }

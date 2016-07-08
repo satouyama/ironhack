@@ -1,0 +1,26 @@
+<%= render "partials/doc_header" %>
+
+
+<ul>
+	<h1>Popularity by comments</h1>
+<%counter = 1%>
+<% @top_10.each do |concert| %> 
+
+
+	<li>
+	<%= link_to("#{counter} : #{concert.artist}", "/concerts/#{concert.id}") %> 
+
+
+	</li>
+
+	<% counter = counter + 1 %>
+<% end %>
+
+</ul>
+
+
+
+
+
+
+<%= render "partials/footer" %>

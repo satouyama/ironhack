@@ -10,7 +10,7 @@
 	
 
 	<% @results_list.each do |result| %>
-	
+
 		<li> Artist: <%= link_to("#{result.artist}", "/concerts/#{result.id}") %></li>
 		<li> Price: <%= result.price %></li>
 		<li> Date: <%= result.date %></li>
