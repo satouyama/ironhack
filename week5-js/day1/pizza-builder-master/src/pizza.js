@@ -121,12 +121,12 @@
 	var green_counter = true;
 	var white_counter = false;
 	var glutten_counter = false;
-	var final = pep_counter * 1 + mush_counter * 1 + green_counter * 1
+	var final = pep_counter * 1 + mush_counter * 1 + green_counter * 1 + 10
 
 	$("strong").text("$" + final)
 
 	$(".btn").click(function(){
-		final = pep_counter * 1 + mush_counter * 1 + green_counter * 1 + white_counter * 3 + glutten_counter * 5
+		final = pep_counter * 1 + mush_counter * 1 + green_counter * 1 + white_counter * 3 + glutten_counter * 5 + 10
 		$("strong").text("$" + final)
 
 
