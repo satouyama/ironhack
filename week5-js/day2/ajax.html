@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1>AJAX</h1>
+
+
+
+
+	</div>
+
+
+	<script type = "text/javascript">
+		
+		// $(function(){
+
+		// 	function loadDoc(url,handleResponse){
+		// 		var httpRequest = new XMLHttpRequest();   // creating a new httpRequest
+		// 		httpRequest.onreadystatechange = handleResponse;   //  Q: setting up a callback functions once the request is done? is this function runs for 5 times? 
+		// 		console.log("did loadDoc run?")
+
+		// 		httpRequest.open("GET",url);  // GET method for this url with aynschronous process. 
+		// 		httpRequest.send();
+
+		// 	}
+
+		// 	function handleResponse(event){
+		// 		var httpRequest = event.currentTarget;  // Q: this line is missing from mine.    Who is the event and Who is the currentTarget here? 
+		// 		// readystatechange is an event  submit i happening to form
+		// 		// the object to which the event is happening to
+		// 		console.log("event is " + event)
+		// 		console.log( "currentTarget is " + event.currentTarget)
+
+		// 		console.log(httpRequest.readyState)
+		// 		console.log(httpRequest.status)
+		// 		if (httpRequest.readyState === 4 && httpRequest.status === 200){  //never ran  Q : WHY DID I GET 201?    When i get 1, it's returnin me 201?
+		// 			var data = JSON.parse(httpRequest.responseText);
+		// 			showData(data);
+		// 			console.log("did STATUS GOOD run?")
+
+		// 		}
+		// 		console.log("did handleResponse run?")
+
+
+		// 	}
+
+		// 	function showData(data){
+		// 		$(".container").text(data);
+		// 		console.log("did showData run?")
+		// 		console.log(data);
+
+		// 	}
+
+		// 	var current_url = "http://ironhack-characters.herokuapp.com/characters";
+
+		// 	loadDoc(current_url,handleResponse);
+
+		// 	// console.log("did this actually run?")
+
+		// })
+
+
+		$.ajax({
+			type: "GET",
+			url: "http://ironhack-characters.herokuapp.com/characters	",
+			success: function(response){
+				console.log("Success");
+				console.log(response);
+			},
+			error: function(error){
+				console.log("Error");
+				console.log(error.responseText);
+			}
+		});
+
+
+
+
+
+	</script>
+
+
+
+
+	
+</body>
+</html>
