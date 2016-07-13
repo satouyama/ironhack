@@ -61,6 +61,7 @@ $(function(){
 
 		}
 		// display_albums()
+		$('#'+artist_id).modal('show')
 
 	}
 
@@ -117,6 +118,10 @@ $(function(){
 	    	var artist = $(this)
 
 	    	var artist_id = artist.prop("class")
+
+	    	if (artist.attr("data-toggle")=== "modal"){
+	    		return;
+	    	}
 
 	    	artist.attr("data-toggle","modal");
 	    	artist.attr("data-target","#"+	artist_id);
