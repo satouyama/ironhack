@@ -118,12 +118,13 @@ $(function(){
 
 			var album = $(this)
 
-			if (album.attr("data-toggle")=== "modal"){
+			if (album.attr("data-toggle") === "modal"){
 	    		return;
 	    	}
 
 	    	album.attr("data-toggle","modal");
 	    	album.attr("data-target","#"+	album_id);
+	    	// album.attr("data-dismiss","modal")
 			// console.log(album_id)
 
 			var track_url =  `https://api.spotify.com/v1/albums/${album_id}/tracks`
@@ -189,10 +190,18 @@ $(function(){
 
 
 		}
-		$("#"+artist_id).modal("hide")
-		$("#"+artist_id).on("hidden.bs.modal",function(e){
+		$(document).on('hidden.bs.modal', function(event){
+			$('.modal-backdrop').remove();
+			console.log(event)
 			$('#track'+album_id).modal('show')
+
 		})
+
+		// $("#"+artist_id).on("hidden.bs.modal",function(e){
+		// 	// $('body').removeClass('modal-open');
+		// 	$('.modal-backdrop').remove();
+		// 	$('#track'+album_id).modal('show')
+		// })
 		
 
 
@@ -243,6 +252,7 @@ $(function(){
 	    	var artist_id = artist.prop("class")
 
 	    	if (artist.attr("data-toggle")=== "modal"){
+	    		$("#"+artist_id).modal("toggle")
 	    		return;
 	    	}
 
