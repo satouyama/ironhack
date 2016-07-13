@@ -196,6 +196,11 @@ $(function(){
 
 })
 
+// better structure
+//  events activation on in one.  
+// functions outside.
+
+
 
 
 //1. inline block items parents can give it to children
