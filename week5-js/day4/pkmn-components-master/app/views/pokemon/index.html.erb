@@ -1,0 +1,98 @@
+<h1>Pokédex</h1>
+
+<!-- List of pokemon -->
+<ul class="pokedex-list">
+  <% @pokemon.each do |pkmn| %>
+    <li>
+      <button class="js-show-pokemon btn btn-link"
+          data-pokemon-uri="<%= pkmn["resource_uri"] %>">
+        <%= pkmn["name"] %>
+      </button>
+    </li>
+  <% end %>
+</ul>
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-pokemon-modal">
+  <div class="modal-dialog">
+    <div class="modal-content js-pokemon-current-modal">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+          <dt >Name</dt>
+          <dd class = "js-pkmn-name">Feraligtr</dd>
+
+          <dt > Description </dt>
+          <dd class = "js-pkmn-description">Feraligtr</dd>
+
+          <dt >Number</dt>
+          <dd class = "js-pkmn-number">#160</dd>
+
+          <button type="button" class="btn btn-primary btn-lg js-evolve-button" data-toggle="modal" data-target=".js-evolution-modal">
+            Evolve!!!
+          </button>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body js-info-modal">
+        <dl class="dl-horizontal">
+          <dt >Height</dt>
+          <dd class = "js-pkmn-height">23</dd>
+
+          <dt>Weight</dt>
+          <dd class = "js-pkmn-weight">888</dd>
+
+          <dt >Hit points</dt>
+          <dd class = "js-pkmn-hp">23</dd>
+
+          <dt>Attack</dt>
+          <dd class = "js-pkmn-attack">888</dd>
+
+          <dt >Defense</dt>
+          <dd class = "js-pkmn-defense">23</dd>
+
+          <dt>Special Attack</dt>
+          <dd class = "js-pkmn-sp_atk">888</dd>
+
+          <dt >Special Defense</dt>
+          <dd class = "js-pkmn-sp_def">23</dd>
+
+          <dt>Speed</dt>
+          <dd class = "js-pkmn-speed">888</dd>
+
+          <img class ="js-pkmn-image" src="#">
+
+          <!-- <dt>Type</dt>
+          <dd class = "js-pkmn-type">888</dd> -->
+
+        </dl>
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+
+<div class="modal fade js-evolution-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Evolution</h4>
+      </div>
+      
+      <div class="modal-body">
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
