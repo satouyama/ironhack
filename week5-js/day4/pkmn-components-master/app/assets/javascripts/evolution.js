@@ -124,6 +124,7 @@ $(document).on("ready",function(){
 	console.log("WHYYYYYYYYzzzz")
 	$(".js-pokemon-modal").on("shown.bs.modal",function(event){
 		console.log(event)
+		$(".js-evolution-modal").find(".modal-body").empty();
 		var id = $(".js-pkmn-number").text();
 		var pokemon = new PokemonApp.Evolution(id)
 
@@ -132,6 +133,11 @@ $(document).on("ready",function(){
 		pokemon.preload()
 
 		
+
+	})
+
+	$(".js-pokemon-modal").on("click",function(event){
+
 
 	})
 
