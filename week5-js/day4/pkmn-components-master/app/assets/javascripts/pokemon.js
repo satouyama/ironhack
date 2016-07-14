@@ -27,6 +27,12 @@ PokemonApp.Pokemon = class {
 				// console.log("height: " + response.height);
 				// console.log("weight: " + response.weight);
 				// var resource = PokemonApp.getImageLink();
+				if (response.sprites.length != 0){
+					var resource_uri = response.sprites[0].resource_uri;
+				// console.log("image object retrieved ")
+				}else{
+					var resource_uri = "#"
+				}
 				PokemonApp.getImage(response.sprites[0].resource_uri);
 
 				var length = response.descriptions.length
@@ -81,8 +87,12 @@ PokemonApp.getImage = function(resource_uri){
 		url: resource_uri,
 		success:function(data){
 			var image_url = data.image;
-			console.log("afterwards " + image_url)
-			$(".js-pkmn-image").prop("src","http://pokeapi.co" + image_url)
+			// console.log("afterwards " + image_url)
+			if (!image_url){
+				$(".js-pkmn-image").prop("src","https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png")
+			}else{
+				$(".js-pkmn-image").prop("src","http://pokeapi.co" + image_url)
+			}
 
 		},
 		error: PokemonApp.handleError

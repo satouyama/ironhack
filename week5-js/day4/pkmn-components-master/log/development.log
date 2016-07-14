@@ -14548,3 +14548,1035 @@ Started GET "/" for 127.0.0.1 at 2016-07-14 17:33:52 -0400
 Processing by PokemonController#index as */*
   Rendered pokemon/index.html.erb within layouts/application (5.7ms)
 Completed 200 OK in 154ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/10020" for 127.0.0.1 at 2016-07-14 17:34:55 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/10020"}
+Completed 200 OK in 1133ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 205ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/pokemon.self-8434cc0680c0d2333c0fe8a56c11c12617a8f155a7c046285a48c674f8f0d9cf.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:46 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:36:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:36:47 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 129ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:36:47 -0400
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:36:48 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 191ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/pokemon.self-6cd5a559e1c6a6303a924b0e263cfa4371cb729a055240defad0906d5fe0c98c.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:00 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 159ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:37:01 -0400
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:01 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/10/" for 127.0.0.1 at 2016-07-14 17:37:01 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/10"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6752/" for 127.0.0.1 at 2016-07-14 17:37:01 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6752"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/no.png" for 127.0.0.1 at 2016-07-14 17:37:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/no.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.0ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.2ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:02 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/10036/" for 127.0.0.1 at 2016-07-14 17:37:02 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/10036"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:02 -0400
+Processing by PokemonController#index as */*
+  Rendered pokemon/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:12 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 226ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/pokemon.self-321b4b4dd5fb436b2249811fd2497f050fa7f2749805633bbd4bd7f2a309b1ca.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 181ms (Views: 178.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:37:13 -0400
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/10/" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/10"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6752/" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6752"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/no.png" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/no.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.1ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.6ms)
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/10036/" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/10036"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:14 -0400
+Processing by PokemonController#index as */*
+  Rendered pokemon/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 121ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 225ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/pokemon.self-95b6f689891ff14ea88dedb6b944a26d81425d116355e859e0b3c9b67abc428b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 149ms (Views: 144.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:37:27 -0400
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:28 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/10/" for 127.0.0.1 at 2016-07-14 17:37:28 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/10"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6752/" for 127.0.0.1 at 2016-07-14 17:37:28 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6752"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/no.png" for 127.0.0.1 at 2016-07-14 17:37:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/no.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/whales/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.5ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/whales/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.4ms)
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:29 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/10036/" for 127.0.0.1 at 2016-07-14 17:37:29 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/10036"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:29 -0400
+Processing by PokemonController#index as */*
+  Rendered pokemon/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 186ms (Views: 182.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:37:49 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/pokemon.self-de77239534bb1f52be0106231232c48e1a0dd0a4475594cbbe5642ad821a247e.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 140ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:37:50 -0400
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:51 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/10/" for 127.0.0.1 at 2016-07-14 17:37:51 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/10"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6752/" for 127.0.0.1 at 2016-07-14 17:37:51 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6752"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/9" for 127.0.0.1 at 2016-07-14 17:37:52 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/10036/" for 127.0.0.1 at 2016-07-14 17:37:52 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/10036"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:37:52 -0400
+Processing by PokemonController#index as */*
+  Rendered pokemon/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/23" for 127.0.0.1 at 2016-07-14 17:37:56 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/24/" for 127.0.0.1 at 2016-07-14 17:37:56 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/24"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6969/" for 127.0.0.1 at 2016-07-14 17:37:56 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6969"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/23" for 127.0.0.1 at 2016-07-14 17:37:57 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/24/" for 127.0.0.1 at 2016-07-14 17:37:57 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/24"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/24/" for 127.0.0.1 at 2016-07-14 17:37:57 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/24"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/25/" for 127.0.0.1 at 2016-07-14 17:37:57 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/25"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/25/" for 127.0.0.1 at 2016-07-14 17:37:57 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/25"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 226ms (Views: 220.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/pokemon.self-c343a03e281cdeb078aa2d9980bc12d36962c6c4db176a94f49ab8db507727d0.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/init.self-076cc818fcd80b81ca5923841692f8232d8c0f69f0e857fd94442af55fc6c0a8.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/evolution.self-b62330630b93d4eff4f17643c67c43906e41c898267339782fdb82efb5499189.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/pokemon.self-b3662c2ec25d9579a069f43c1963a20c80e80eca8d21fda610157579c4d9155e.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:23 -0400
+
+
+Started GET "/assets/type.self-ffe7e7d46915be5fa72f8b439bbae08b6bbdbb6e955be758cd2d87f73c4a06bd.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+
+
+Started GET "/assets/application.self-66ce942f6664bddec4b793e716c91e370e706a1c553e1687dfde6ed10dd69d1b.js?body=1" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 188ms (Views: 185.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+
+
+Started GET "/api/pokemon/23" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/24/" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/24"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6969/" for 127.0.0.1 at 2016-07-14 17:38:24 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6969"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/23" for 127.0.0.1 at 2016-07-14 17:38:25 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/24/" for 127.0.0.1 at 2016-07-14 17:38:25 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/24"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/24/" for 127.0.0.1 at 2016-07-14 17:38:25 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/24"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/25/" for 127.0.0.1 at 2016-07-14 17:38:25 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/25"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/25/" for 127.0.0.1 at 2016-07-14 17:38:25 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/25"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/18" for 127.0.0.1 at 2016-07-14 17:38:28 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/18"}
+Completed 200 OK in 799ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/19/" for 127.0.0.1 at 2016-07-14 17:38:28 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/19"}
+Completed 200 OK in 1388ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/6896/" for 127.0.0.1 at 2016-07-14 17:38:30 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/6896"}
+Completed 200 OK in 985ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/18" for 127.0.0.1 at 2016-07-14 17:38:31 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/18"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/163" for 127.0.0.1 at 2016-07-14 17:38:32 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/163"}
+Completed 200 OK in 1278ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/164/" for 127.0.0.1 at 2016-07-14 17:38:33 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/164"}
+Completed 200 OK in 1100ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/description/9221/" for 127.0.0.1 at 2016-07-14 17:38:34 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"description/9221"}
+Completed 200 OK in 1076ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/pokemon/163" for 127.0.0.1 at 2016-07-14 17:38:35 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/163"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/164/" for 127.0.0.1 at 2016-07-14 17:38:35 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/164"}
+Completed 200 OK in 935ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/164/" for 127.0.0.1 at 2016-07-14 17:38:36 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/164"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/165/" for 127.0.0.1 at 2016-07-14 17:38:36 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/165"}
+Completed 200 OK in 943ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/sprite/165/" for 127.0.0.1 at 2016-07-14 17:38:37 -0400
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"sprite/165"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
