@@ -11,7 +11,7 @@ PokemonApp.Pokemon = class {
 	}
 
 	render (){
-		console.log("Rendering pokemon: #" + this.id);
+		// console.log("Rendering pokemon: #" + this.id);
 		// var start = new Date().getTime();
 
 		// var end;
@@ -46,11 +46,13 @@ PokemonApp.Pokemon = class {
 				$(".js-pkmn-sp_atk").text(response.sp_atk);
 				$(".js-pkmn-sp_def").text(response.sp_def);
 				$(".js-pkmn-speed").text(response.speed);
+
+				console.log(response)
 				// $(".js-pkmn-type").text(response.types[0].name);
 
 
 				// end = new Date().getTime();
-				console.log(response)
+				// console.log(response)
 
 				// console.log("Time used" + (end-start))
 				$(".js-pokemon-modal").modal("show")
