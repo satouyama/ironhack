@@ -31,10 +31,12 @@ SpotifyApp.Search = class {
 		var song_name = song_object.name;
 		var artist = song_object.artists[0].name;
 		var cover_image_link = song_object.album.images[0].url;
+		var preview_url = song_object.preview_url;
 
 		$(".js-title").text(song_name);
 		$(".js-author").text(artist);
 		$(".js-cover").attr("src",cover_image_link)
+		$(".js-preview").attr("src",preview_url)
 
 
 	}
@@ -59,25 +61,28 @@ SpotifyApp.Search = class {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 $(function(){
 	$(".js-track-search").on("submit",function(event){
 		event.preventDefault();
 		var search_term = $(".js-track-search-box").val();
 		var new_song = new SpotifyApp.Search(search_term)
-
+		$(".js-preview").trigger("pause")
+		$(".js-play").removeClass("playing")
 		new_song.render()
 
 
+	})
+
+	$(".js-play").on("click",function(event){
+		var button = $(this);
+		if (button.prop("class").match(/playing/)){
+		      $(".js-preview").trigger("pause")
+		      button.removeClass("playing")
+		      console.log('music paused');
+		  } else {
+		       $(".js-preview").trigger("play");
+		      button.addClass("playing")
+		      console.log('music playing');
+		  }
 	})
 })
