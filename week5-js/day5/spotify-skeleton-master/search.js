@@ -38,7 +38,7 @@ SpotifyApp.Search = class {
 			var track_element = `
 								<br>
 
-								<a href = "#"> ${counter+1} : ${song_name}</a>
+								<a href = "#" id = "${song_name}"> ${counter+1} : ${song_name}</a>
 								<br>
 								`
 
@@ -84,6 +84,7 @@ SpotifyApp.Search = class {
 $(function(){
 	$(".js-track-search").on("submit",function(event){
 		event.preventDefault();
+		// console.log("backdrop created by other") not me
 		var search_term = $(".js-track-search-box").val();
 		var new_song = new SpotifyApp.Search(search_term)
 		$(".js-preview").trigger("pause")
@@ -95,7 +96,25 @@ $(function(){
 
 	$(".js-more-results").on("click",function(event){
 		event.preventDefault();
-		$("..modal-body-full-track").modal("show")
+
+		console.log("backdrop created by more results button")
+
+		$("#js-all-tracks-modal").modal("show")
+
+	})
+
+	$(".modal-body-full-track").on("click","a",function(event){
+		var $name = $(event.target).prop("id")
+		// console.log($name)
+		// console.log("backdrop created by other") not me
+
+		var selected_song = new SpotifyApp.Search($name);
+		$(".js-preview").trigger("pause")
+		$(".js-play").removeClass("playing")
+		$("#js-all-tracks-modal").modal("hide")
+
+		selected_song.render_first();
+
 
 	})
 

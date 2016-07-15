@@ -44,8 +44,10 @@ $(function(){
 
 	$(".js-preview").on("ended",function(event){
 		$(".js-play").removeClass("playing");
-		
+
 	})
+
+	
 
 
 

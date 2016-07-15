@@ -60,8 +60,9 @@ SpotifyApp.Artist = class {
 
 $(function(){
 	$(".js-author").on("click",function(event){
+		// console.log("backdrop created by other")  NOT ME
 		// event.preventDefault();
-		console.log("clicked");
+		// console.log("clicked");
 		var name = $(".js-author").text();
 		var artist = new SpotifyApp.Artist(name);
 
@@ -71,6 +72,7 @@ $(function(){
 	});
 
 	$("#js-artist-info-modal").on("hidden.bs.modal",function(event){
+		// console.log("backdrop created by other")  Not me
 		$(".modal-body-artist").empty()
 	})
 
