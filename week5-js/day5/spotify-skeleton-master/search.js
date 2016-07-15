@@ -89,6 +89,8 @@ $(function(){
 		var new_song = new SpotifyApp.Search(search_term)
 		$(".js-preview").trigger("pause")
 		$(".js-play").removeClass("playing")
+		$(".modal-body-full-track").empty();
+		$(".modal-body-all-albums").empty();
 		new_song.render_first()
 
 

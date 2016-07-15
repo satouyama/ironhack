@@ -32,13 +32,14 @@ SpotifyApp.Artist = class {
 		var genres = artist_object.artists.items[0].genres[0];
 		var followers = artist_object.artists.items[0].followers.total;
 		var popularity = artist_object.artists.items[0].popularity;
+		var artist_id = artist_object.artists.items[0].id
 
 
 
 
 		var artist_info = `
 							<ul class="list-group js-artist-info">
-							  <li class="list-group-item">Name: ${name}</li>
+							  <li id = "name" class="list-group-item" data-id = "${artist_id}">Name: ${name}</li>
 							  <img src ="${image_url}" height = "100" width = "100">
 							  <li class="list-group-item">Genres: ${genres}</li>
 							  <li class="list-group-item">Followers: ${followers}</li>
