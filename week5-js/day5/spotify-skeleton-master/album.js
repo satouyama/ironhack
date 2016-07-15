@@ -63,7 +63,7 @@ SpotifyApp.Album = class {
 	append_albums(album_name,image_url,album_id){
 		var album_id = album_id;	
 		var album_name = album_name;
-		var artist_id = artist_id;
+		// var artist_id = artist_id;
 		var image_url = image_url;
 
 		var list_item = `	<a id = "${album_id}" href ="#">
@@ -85,10 +85,13 @@ SpotifyApp.Album = class {
 $(function(){
 	$("#js-artist-info-modal").on("shown.bs.modal",function(event){
 		var artist_id = $("li#name").attr("data-id");
-		console.log(artist_id)
+		// console.log(artist_id)
 
 		// console.log("i am clicked")
 		var new_album = new SpotifyApp.Album(artist_id);
+		// console.log(new_album)
+
+		// new SpotifyApp.Album(12123).prepareData();
 
 		new_album.prepareData();
 
@@ -104,7 +107,6 @@ $(function(){
 
 		
 	})
-
 
 
 })
