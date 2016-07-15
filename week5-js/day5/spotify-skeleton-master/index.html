@@ -1,12 +1,18 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	
+	
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script type="text/javascript" src ="init.js"></script>
 	<script type="text/javascript" src ="function.js"></script>
 	<script type="text/javascript" src ="search.js"></script>
 	<script type="text/javascript" src ="play.js"></script>
+	<script type="text/javascript" src ="artist.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="widget">
@@ -18,7 +24,9 @@
 
 		<div class="metadata">
 		  <p class="title js-title">Hunger of The Pine</p>
-		  <p class="author js-author">alt-J</p>
+		  
+
+			<button type="button" class="btn btn-primary author js-author" data-toggle="modal" data-target="#js-artist-info-modal">alt-j</button>
 
 		  <div class="seekbar">
 		    <progress class = "js-progress-bar" value="0" max="30"></progress>
@@ -37,7 +45,54 @@
 		  <input type="search" name="tracksearch" class ="js-track-search-box">
 		  <input type = "submit">
 		</form>
+		
+		<button type="button" class="btn btn-secondary author js-more-results" data-toggle="modal" data-target="#js-all-tracks-modal">See more results</button>
+
+
+
 	</div>
+
+	<div class="modal fade js-modal" id = "js-artist-info-modal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <!-- Close button -->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span>&times;</span>
+	        </button>
+
+	        <h2>Artist Info.</h2>
+	      </div>
+
+	      <div class="modal-body-artist">
+	        <p></p>
+	      </div>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade js-modal" id = "js-all-tracks-modal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <!-- Close button -->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span>&times;</span>
+	        </button>
+
+	        <h2>All Tracks Results</h2>
+	      </div>
+
+	      <div class="modal-body-full-track">
+	        <p></p>
+	      </div>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
 </body>
 </html>

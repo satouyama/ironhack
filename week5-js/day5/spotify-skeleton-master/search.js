@@ -4,10 +4,11 @@ SpotifyApp.Search = class {
 	}
 
 
-	render(){
+	render_first(){
 
 		var url = "https://api.spotify.com/v1/search?q=" + this.song_name + "&type=track"
 		var boundUpdateContent = this.updateContent.bind(this)
+		var boundPrepareFullData = this.prepareFullData.bind(this)
 		$.ajax({
 			type:"GET",
 			url: url,
@@ -18,6 +19,9 @@ SpotifyApp.Search = class {
 
 				boundUpdateContent(first_song_object);
 
+				$(".js-track-search-box").val("")
+
+				boundPrepareFullData(data.tracks.items);
 
 			},
 			error:SpotifyApp.handleError
@@ -26,6 +30,22 @@ SpotifyApp.Search = class {
 
 
 	}
+
+	prepareFullData(all_tracks){
+		for (var counter=0;counter<all_tracks.length;counter++){
+			var song_name = all_tracks[counter].name;
+
+			var track_element = `
+								<br>
+
+								<a href = "#"> ${counter+1} : ${song_name}</a>
+								<br>
+								`
+
+			$(".modal-body-full-track").append(track_element)
+		}
+	}
+
 
 	updateContent(song_object){
 		var song_name = song_object.name;
@@ -68,8 +88,14 @@ $(function(){
 		var new_song = new SpotifyApp.Search(search_term)
 		$(".js-preview").trigger("pause")
 		$(".js-play").removeClass("playing")
-		new_song.render()
+		new_song.render_first()
 
+
+	})
+
+	$(".js-more-results").on("click",function(event){
+		event.preventDefault();
+		$("..modal-body-full-track").modal("show")
 
 	})
 
