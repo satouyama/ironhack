@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src ="init.js"></script>
+	<script type="text/javascript" src ="function.js"></script>
+	<script type="text/javascript" src ="search.js"></script>
+</head>
+<body>
+	<div class="widget">
+		<div class="header">
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div class="btn-play disabled"></div>
+
+		<div class="metadata">
+		  <p class="title js-title">Hunger of The Pine</p>
+		  <p class="author js-author">alt-J</p>
+
+		  <div class="seekbar">
+		    <progress value="5" max="30"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover">
+		<img class = "js-cover" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+
+ 
+		<form class = "js-track-search">
+		  Search Track:
+		  <input type="search" name="tracksearch" class ="js-track-search-box">
+		  <input type = "submit">
+		</form>
+	</div>
+
+</body>
+</html>
