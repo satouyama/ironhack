@@ -73,16 +73,6 @@ $(function(){
 
 	})
 
-	$(".js-play").on("click",function(event){
-		var button = $(this);
-		if (button.prop("class").match(/playing/)){
-		      $(".js-preview").trigger("pause")
-		      button.removeClass("playing")
-		      console.log('music paused');
-		  } else {
-		       $(".js-preview").trigger("play");
-		      button.addClass("playing")
-		      console.log('music playing');
-		  }
-	})
+
+
 })
