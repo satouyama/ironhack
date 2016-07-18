@@ -49,7 +49,7 @@ def destroy
 end
 
 def add_ingredient
-	sandwich_id = params[:id]
+	# sandwich_id = params[:id]
 	sandwich = Sandwich.find_by(id: params[:id])
 	
 	unless sandwich
@@ -57,8 +57,10 @@ def add_ingredient
 		return
 	end
 
-	ingredient_id = params[:ingredient_id]
-	SandwichIngredient.create(sandwich_id:sandwich_id,ingredient_id:ingredient_id)
+	# ingredient_id = params[:ingredient_id]
+	ingredient = Ingredient.find_by(id: params[:ingredient_id])
+	sandwich.ingredients.push(ingredient)
+	# SandwichIngredient.create(sandwich_id:sandwich_id,ingredient_id:ingredient_id)
 	ingredients = sandwich.ingredients
 	response = {sandwich: sandwich, ingredients: ingredients}
 
