@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sandwich Names</title>
+</head>
+<body>
+
+	<ul>
+		<% @sandwiches.each do |sandwich| %>
+			<li>
+				<a href="/sandwiches/<%=sandwich.id%>"> Name: <%=sandwich.name%></a>
+			</li>
+		<% end %>
+	</ul>
+	
+</body>
+</html>

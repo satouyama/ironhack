@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sandwcih detail</title>
+</head>
+<body>
+	<ul>
+		
+		<li>Name: <%=@sandwich.name %></li>
+		<li>Bread_type: <%= @sandwich.bread_type%></li>
+		<li>Total Calories<%= @sandwich.total_calories%></li>
+		<li>Ingredients: 
+			<% @sandwich.ingredients.each do |ingredient|%>
+				<%=ingredient.name%>
+			<% end %>
+	
+		</li>
+
+
+	</ul>
+</body>
+</html>
