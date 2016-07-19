@@ -1,0 +1,23 @@
+<h1>User Details</h1>
+
+
+<%= link_to("Check this user's products", "/users/#{@user.id}/products") %>
+
+
+<ul>
+	
+	<li> Name:
+		<%= @user.name %>
+	</li>
+
+
+	<li> Email:
+		<%= @user.email%>
+	</li>
+
+
+
+
+</ul>
+
+<%= link_to("Home Page", "/users") %>

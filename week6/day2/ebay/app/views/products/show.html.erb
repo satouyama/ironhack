@@ -1,0 +1,78 @@
+<h1>Product Details</h1>
+
+
+<ul>
+	
+	<li> Title:
+		<%= @current_product.title %>
+	</li>
+
+
+	<li> Description:
+		<%= @current_product.description%>
+	</li>
+
+	<li> Deadline:
+		<%= @current_product.deadline%>
+	</li>
+
+
+
+
+</ul>
+
+<% if @current_product.deadline < (Time.now)%>
+	<% winner_email =  @bids_list.first.bidder_email%>
+	<% winner = User.find_by(email: winner_email)%>
+	<h1>The winnder is!!!!!! <%= winner.name  %></h1>
+	
+	<h1>Past Bids</h1>
+<% else %>
+	
+
+	<h1>Make a bid here!</h1>	
+	<%= form_for [@current_user, @current_product, Bid.new] do |f| %>
+
+
+		<%= f.label :amount %>
+		<%= f.text_field :amount %>
+
+
+		<%= f.label :bidder_email %>
+		<%= f.text_field :bidder_email%>
+
+
+		<%= f.button %>
+
+
+	<% end %>
+
+	<h1>Current Bids</h1>
+
+
+<% end %>
+
+
+
+
+
+<ul>
+	<% @bids_list.each do |bid| %>
+		<% bidder_locate_email = bid.bidder_email %>
+		<% actual_bidder = User.find_by(email:bidder_locate_email) %>
+		<%#= actual_bidder.inspect  %>
+		<% if actual_bidder != nil %>
+			<li> Bidder:
+				<%= actual_bidder.name %>
+			</li>
+
+			<li> Amount:
+				<%= bid.amount%>
+			</li>
+		<% end %>
+	<% end %>
+</ul>
+
+
+
+<%= link_to("Home Page", "/users") %>
