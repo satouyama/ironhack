@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sandwich Names</title>
+</head>
+<body>
+
+	<ul>
+		<% @sandwiches.each do |sandwich| %>
+			<li>
+				<a href="/sandwiches/<%=sandwich.id%>"> Name: <%=sandwich.name%></a>
+			</li>
+		<% end %>
+	</ul>
+
+
+<% if user_signed_in? %>
+	<h2> Welcome <%= current_user.email %> </h2> 
+	<% else %>
+	<h2> No one logged in </h2>
+	<%= link_to("Log In", new_user_session_path) %>
+	<%= link_to("Sign Up", new_user_registration_path) %>
+<% end %>
+
+</body>
+</html>

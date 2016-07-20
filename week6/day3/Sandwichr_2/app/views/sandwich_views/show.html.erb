@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sandwcih detail</title>
+</head>
+<body>
+	<ul>
+		
+		<li>Name: <%=@sandwich.name %></li>
+		<li>Bread_type: <%= @sandwich.bread_type%></li>
+		<li class ="data-total-calories">Total Calories<%= @sandwich.total_calories%></li>
+		<li class ="data-ingredients">Ingredients: 
+			<% @sandwich.ingredients.each do |ingredient|%>
+				<%=ingredient.name%>
+			<% end %>
+	
+		</li>
+
+		<ul>
+		<% @ingredients.each do |ingredient|%>
+			<li>	
+
+			<!-- <button href="#"> Add: <%=ingredient.name%></button> -->
+			
+			<%= button_tag(type: 'button', data: { id: ingredient.id}) do %>
+
+			  <%= content_tag(:strong, "add " + ingredient.name) %>
+
+			<% end %>
+
+
+			</li>
+		<% end %>
+		</ul>
+
+
+
+	</ul>
+
+	<script type="text/javascript">
+
+
+		$("button").on("click",function(){
+			var id = $(this).attr("data-id");
+			var sandwich_id = <%=@sandwich.id%>;
+
+			var data = {
+				ingredient_id: id
+			}
+
+			$.ajax({
+				type:'POST',
+				url: `/api/sandwiches/${sandwich_id}/ingredients/add`,
+				data: data,
+				success:function(data,text,xhr){
+					// redirect_to `/sandwiches/${sandwich_id}`
+					console.log(data)
+
+					var length = data.ingredients.length
+
+					$(".data-total-calories").text(data.sandwich.total_calories)
+					$(".data-ingredients").append(`<span>${data.ingredients[length-1].name}</span>`)
+
+				},
+				error:function(){
+					console.log("error")
+				}
+
+			})
+
+		})
+
+	</script>
+
+</body>
+</html>
